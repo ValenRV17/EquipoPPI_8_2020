@@ -21,6 +21,9 @@ app.use('/api', gasto);
 app.use('/api', gasinp);
 app.use('/api', persona);
 app.use('/api', consejos);
+app.get('/', (req, res)=>{
+    res.send('Hola')
+})
 
 app.listen(app.get('port'), () => {
     console.log(`Servidor corriendo en el puerto ${app.get('port')}`);

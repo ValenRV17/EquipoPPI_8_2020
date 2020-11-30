@@ -17,7 +17,7 @@ router.get('/usuarios', (req,res)=>{
 
 router.get('/usuarios/:usuario_id', (req,res)=>{
     const {usuario_id} = req.params;
-    connection.query('SELECT * FROM usuario WHERE usuario_id=?', [usuario_id],
+    connection.query('SELECT * FROM Usuario WHERE usuario_id=?', [usuario_id],
     (err,rows,fields)=>{
         if(!err){
             res.json(rows[0]);
@@ -33,7 +33,7 @@ router.post('/nuevo-usuario', (req, res)=>{
 
     let usuario = [first_name, contraseña, last_name, email];
 
-    let nuevoUsuario = `INSERT INTO usuario (first_name, contraseña, last_name, email) VALUES (?,?,?,?)`;
+    let nuevoUsuario = `INSERT INTO Usuario (first_name, contraseña, last_name, email) VALUES (?,?,?,?)`;
 
     connection.query(nuevoUsuario, usuario, (err, results, fields)=>{
         if (err){
@@ -48,7 +48,7 @@ router.put('/usuario/:usuario_id', (req, res)=>{
     
     const{usuario_id} = req.params;
 
-    connection.query(`UPDATE usuario SET first_name=?, contraseña=?, last_name=?, email=? WHERE usuario_id=?`,
+    connection.query(`UPDATE Usuario SET first_name=?, contraseña=?, last_name=?, email=? WHERE usuario_id=?`,
     [first_name, contraseña, last_name, email, usuario_id], (err, rows, fields) =>{
         if(!err){
             res.json({status: 'Estudiante actualizado'});
@@ -61,7 +61,7 @@ router.put('/usuario/:usuario_id', (req, res)=>{
 router.delete('/usuario/:usuario_id', (req,res)=>{
     const {usuario_id} = req.params;
     
-    connection.query(`DELETE FROM usuario WHERE usuario_id = ?`, [usuario_id], (err, rows, fields) =>{
+    connection.query(`DELETE FROM Usuario WHERE usuario_id = ?`, [usuario_id], (err, rows, fields) =>{
         if(!err){
             res.json({status: 'Estudiante eliminado'});
         }else{

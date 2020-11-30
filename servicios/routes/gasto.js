@@ -5,7 +5,7 @@ const connection = require('../db/db.js');
 
 router.get('/gastos', (req,res)=>{
 
-    connection.query('SELECT * FROM gastos', (err, rows, fields)=>{
+    connection.query('SELECT * FROM Gastos', (err, rows, fields)=>{
         if (!err){
             res.json(rows);
         }   else{
@@ -21,7 +21,7 @@ router.post('/nuevo-gasto', (req, res)=>{
 
     let gasto = [nombre_gasto, tipo_gasto, valor_gasto, usuario_id];
 
-    let nuevoGasto = `INSERT INTO gastos (nombre_gasto, tipo_gasto, valor_gasto, usuario_id) VALUES (?,?,?,?)`;
+    let nuevoGasto = `INSERT INTO Gastos (nombre_gasto, tipo_gasto, valor_gasto, usuario_id) VALUES (?,?,?,?)`;
 
     connection.query(nuevoGasto, gasto, (err, results, fields)=>{
         if (err){
@@ -36,7 +36,7 @@ router.put('/gasto/:gasto_id', (req, res)=>{
     
     const{gasto_id} = req.params;
 
-    connection.query(`UPDATE gastos SET nombre_gasto=?, tipo_gasto=?, valor_gasto=?, usuario_id=? WHERE gasto_id=?`,
+    connection.query(`UPDATE Gastos SET nombre_gasto=?, tipo_gasto=?, valor_gasto=?, usuario_id=? WHERE gasto_id=?`,
     [nombre_gasto, tipo_gasto, valor_gasto, usuario_id, gasto_id], (err, rows, fields) =>{
         if(!err){
             res.json({status: 'Gasto actualizado'});
@@ -49,7 +49,7 @@ router.put('/gasto/:gasto_id', (req, res)=>{
 router.delete('/gasto/:gasto_id', (req,res)=>{
     const {gasto_id} = req.params;
     
-    connection.query(`DELETE FROM gastos WHERE gasto_id = ?`, [gasto_id], (err, rows, fields) =>{
+    connection.query(`DELETE FROM Gastos WHERE gasto_id = ?`, [gasto_id], (err, rows, fields) =>{
         if(!err){
             res.json({status: 'Gasto eliminado'});
         }else{

@@ -36,7 +36,7 @@ router.put('/persona/:pers_id', (req, res)=>{
     
     const{pers_id} = req.params;
 
-    connection.query(`UPDATE persona SET nombre_pers=?, parentesco=?, usuario_id=? WHERE pers_id=?`,
+    connection.query(`UPDATE personas SET nombre_pers=?, parentesco=?, usuario_id=? WHERE pers_id=?`,
     [nombre_pers, parentesco, usuario_id, pers_id], (err, rows, fields) =>{
         if(!err){
             res.json({status: 'Persona actualizada'});
@@ -49,7 +49,7 @@ router.put('/persona/:pers_id', (req, res)=>{
 router.delete('/persona/:pers_id', (req,res)=>{
     const {pers_id} = req.params;
     
-    connection.query(`DELETE FROM ingresos WHERE pers_id = ?`, [pers_id], (err, rows, fields) =>{
+    connection.query(`DELETE FROM personas WHERE pers_id = ?`, [pers_id], (err, rows, fields) =>{
         if(!err){
             res.json({status: 'Persona eliminada'});
         }else{

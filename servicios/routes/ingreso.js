@@ -5,7 +5,7 @@ const connection = require('../db/db.js');
 
 router.get('/ingresos', (req,res)=>{
 
-    connection.query('SELECT * FROM ingresos', (err, rows, fields)=>{
+    connection.query('SELECT * FROM Ingresos', (err, rows, fields)=>{
         if (!err){
             res.json(rows);
         }   else{
@@ -21,7 +21,7 @@ router.post('/nuevo-ingreso', (req, res)=>{
 
     let ingreso = [nombre_ingre, tipo_ingre, valor_ingre, usuario_id];
 
-    let nuevoIngreso = `INSERT INTO ingresos (nombre_ingre, tipo_ingre, valor_ingre, usuario_id) VALUES (?,?,?,?)`;
+    let nuevoIngreso = `INSERT INTO Ingresos (nombre_ingre, tipo_ingre, valor_ingre, usuario_id) VALUES (?,?,?,?)`;
 
     connection.query(nuevoIngreso, ingreso, (err, results, fields)=>{
         if (err){
@@ -36,7 +36,7 @@ router.put('/ingreso/:ingres_id', (req, res)=>{
     
     const{ingres_id} = req.params;
 
-    connection.query(`UPDATE ingresos SET nombre_ingre=?, tipo_ingre=?, valor_ingre=?, usuario_id=? WHERE ingre_id=?`,
+    connection.query(`UPDATE Ingresos SET nombre_ingre=?, tipo_ingre=?, valor_ingre=?, usuario_id=? WHERE ingre_id=?`,
     [nombre_ingre, tipo_ingre, valor_ingre, usuario_id, ingres_id], (err, rows, fields) =>{
         if(!err){
             res.json({status: 'Ingreso actualizado'});
@@ -49,7 +49,7 @@ router.put('/ingreso/:ingres_id', (req, res)=>{
 router.delete('/ingreso/:ingres_id', (req,res)=>{
     const {ingres_id} = req.params;
     
-    connection.query(`DELETE FROM ingresos WHERE ingres_id = ?`, [ingres_id], (err, rows, fields) =>{
+    connection.query(`DELETE FROM Ingresos WHERE ingres_id = ?`, [ingres_id], (err, rows, fields) =>{
         if(!err){
             res.json({status: 'Ingreso eliminado'});
         }else{

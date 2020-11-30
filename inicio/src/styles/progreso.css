@@ -1,0 +1,59 @@
+
+
+.progreso{
+    padding-top: 150px;
+    margin-left: 270px;
+    padding-bottom: 50px;
+    box-shadow: 0 0 4px 0px black;
+    background-color: white;
+    width: 80%;
+}
+
+.progreso h1{
+    text-align: center;
+    font-weight: normal;
+    font-size: 100px;
+    line-height: 120px;
+    overflow: hidden;
+    background-color: rgb(181, 255, 218);
+    border-radius: 500rem;
+    padding: 10px 20px 10px 20px;
+    font-family: simplifica;
+}
+
+.progreso p{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 30px;
+    font-weight: normal;
+    
+}
+.barritas{
+    margin-left: 270px;
+    margin-top: 40px;
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    box-shadow: 0 0 20px 0 teal;
+}
+
+.barritas p{
+    font-size: 40px;
+}
+
+.recipiente {
+    width: 70%;
+    background-color: #ddd; 
+    
+  }
+  
+  .skill {
+    text-align: right; 
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+    color: white; 
+  }
+  
+  .mes {width: 90%; background-color: #4CAF50;} 
+  .mes-pas {width: 80%; background-color: #2196F3;}

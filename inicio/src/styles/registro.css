@@ -1,0 +1,48 @@
+
+.body_registro{
+    background-color: #1ab7ca;
+}
+
+.inicio_registro{
+    background-color: rgb(205, 255, 255);
+    width: 40%;
+    margin-left: 150px;
+    position: absolute;
+    box-shadow: 0 20px 20px 0 rgba(4, 106, 165, 0.623);
+    margin-top: 40px;
+    padding-bottom: 145.6px;
+}
+.form_registro{
+    text-align: center;
+    margin-top: 41px;
+    padding-top: 0;
+    font-size: 34px;
+    font-family: simplifica;
+    padding-bottom: 0%;
+}
+.input_text{
+    border-radius: 2rem;
+    padding-right: 200px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: 2px solid #bbbbbb;
+}
+
+.enviar_registro{
+    margin-top: 35px;
+    margin-bottom: 35px;
+    margin-left: 140px;
+    display: block;
+}
+
+
+.imagen_registro{
+    float: left;
+    width: 500px;
+    height: 570px;
+    position: absolute;
+    margin-left: 680px;
+    box-shadow: 0 20px 20px 0 rgba(4, 106, 165, 0.623);
+    z-index: -1;
+    margin-top: 40px;
+}

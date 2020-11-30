@@ -1,0 +1,78 @@
+
+
+
+.inicio_sesion{
+    background-color: rgb(205, 255, 255);
+    width: 40%;
+    margin-left: 150px;
+    position: absolute;
+    box-shadow: 0 20px 20px 0 rgba(4, 106, 165, 0.623);
+    margin-top: 40px;
+    padding-bottom: 129.4px;
+    
+}
+.sesion_form{
+    background-color: rgb(205, 255, 255);
+    text-align: center;
+    margin-top: 60px;
+    padding-top: 0;
+    font-size: 34px;
+    font-family: simplifica;
+    padding-bottom: 0%;
+}
+.inp_text{
+    background-color: rgb(255, 255, 255);
+    border-radius: 2rem;
+    padding-right: 200px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: 2px solid #bbbbbb;
+}
+
+.enviar_sesion{
+    background-color: rgb(205, 255, 255);
+    margin-top: 35px;
+    margin-bottom: 35px;
+    margin-left: 140px;
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    align-self: center;
+}
+
+.opciones{
+    background-color: white;
+    display: inline-flex;
+    margin-bottom: 84px;
+    margin-left: 100px;
+    font-size: 14px;
+}
+
+.olvido{
+    background-color: white;
+    padding-left: 30px;
+}
+
+.imagen_sesion{
+    background-color: rgb(205, 255, 255);
+    float: left;
+    width: 500px;
+    height: 593px;
+    position: absolute;
+    margin-left: 680px;
+    box-shadow: 0 20px 20px 0 rgba(4, 106, 165, 0.623);
+    z-index: -1;
+    margin-top: 40px;
+}
+.text{
+    background-color: rgb(205, 255, 255);
+}
+
+.opciones p{
+    background-color: rgb(205, 255, 255);
+}
+
+.opciones a{
+    background-color: rgb(205, 255, 255);
+}

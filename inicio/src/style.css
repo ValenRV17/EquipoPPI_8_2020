@@ -1,0 +1,360 @@
+
+@font-face{
+    font-family: simplifica;
+    src: url('./simplifica.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+*{font-family: simplifica;
+    font-weight: bold;
+}
+
+
+
+
+.bienvenido{
+    padding-top: 150px;
+    margin-left: 270px;
+    padding-bottom: 50px;
+    box-shadow: 0 0 4px 0px black;
+    background-color: white;
+    width: 80%;
+}
+
+.bienvenido h1{
+    text-align: center;
+    font-weight: normal;
+    font-size: 100px;
+    line-height: 120px;
+    overflow: hidden;
+    background-color: rgb(238, 255, 253);
+    border-radius: 500rem;
+    padding: 10px 20px 10px 20px;
+    font-family: simplifica;
+}
+
+.bienvenido p{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 30px;
+    font-weight: normal;
+    
+}
+
+.card_ingre{
+    margin-top: 30px;
+    box-shadow: 0 4px 8px 0 rgba(2, 2, 2, 0.486);
+    transition: 0.3s;
+    border-radius: 5px;
+    width: 26%;
+    margin-left: 370px;
+    background-color: white;
+    position: relative;
+    float: left;
+    display: block;
+    z-index: 0;
+}
+
+.card_ingre:hover{
+    box-shadow: 0 8px 16px 0 rgba(2, 2, 2, 0.486);
+}
+
+.image_ing{
+    height: 350px;
+    width: 340px;
+    border-radius: 5px 5px 0 0;
+}
+
+.container{
+    padding: 2px 16px;
+    text-align: center;
+    font-size: 25px;
+    font-family: sans-serif;
+    line-height: 70px;
+    background-color: rgb(204, 252, 168);
+}
+
+.card_gast{
+    margin-top: 30px;
+    box-shadow: 0 4px 8px 0 rgba(2, 2, 2, 0.486);
+    transition: 0.3s;
+    border-radius: 5px;
+    width: 26%;
+    margin-left: 90px;
+    background-color: white;
+    display: block;
+    height: auto;
+    position: relative;
+    float: left;
+    z-index: 0;
+}
+
+.card_gast:hover{
+    box-shadow: 0 8px 16px 0 rgba(2, 2, 2, 0.486);
+}
+
+.image_gast{
+    height: 350px;
+    width: 340px;
+    border-radius: 5px 5px 0 0;
+}
+
+.container2{
+    padding: 2px 16px;
+    text-align: center;
+    font-size: 25px;
+    font-family: sans-serif;
+    line-height: 70px;
+    background-color: rgb(252, 168, 168);
+}
+
+.card_pers{
+    margin-top: 30px;
+    box-shadow: 0 4px 8px 0 rgba(2, 2, 2, 0.486);
+    transition: 0.3s;
+    border-radius: 5px;
+    width: 26%;
+    margin-left: 370px;
+    background-color: white;
+    position: relative;
+    float: left;
+    display: block;
+    z-index: 0;
+}
+
+.card_pers:hover{
+    box-shadow: 0 8px 16px 0 rgba(2, 2, 2, 0.486);
+}
+
+.image_pers{
+    height: 350px;
+    width: 340px;
+    border-radius: 5px 5px 0 0;
+}
+
+.container3{
+    padding: 2px 16px;
+    text-align: center;
+    font-size: 25px;
+    font-family: sans-serif;
+    line-height: 70px;
+    background-color: rgb(189, 247, 255);
+}
+
+.card_fast{
+    margin-top: 30px;
+    box-shadow: 0 4px 8px 0 rgba(2, 2, 2, 0.486);
+    transition: 0.3s;
+    border-radius: 5px;
+    width: 26%;
+    margin-left: 90px;
+    background-color: white;
+    display: block;
+    height: auto;
+    position: relative;
+    float: left;
+    z-index: 0;
+}
+
+.card_fast:hover{
+    box-shadow: 0 8px 16px 0 rgba(2, 2, 2, 0.486);
+}
+
+.image_fast{
+    height: 350px;
+    width: 340px;
+    border-radius: 5px 5px 0 0;
+}
+
+.container4{
+    padding: 2px 16px;
+    text-align: center;
+    font-size: 25px;
+    font-family: sans-serif;
+    line-height: 70px;
+    background-color: rgb(254, 255, 190);
+}
+
+.nosotros{
+    margin-top: 970px;
+    margin-left: 270px;
+    padding-top: 75px;
+    padding-bottom: 50px;
+    box-shadow: 0 0 4px 0px black;
+    background-color: white;
+    width: 80%;
+    position: absolute;
+    display: block;
+    z-index: 0;
+}
+
+.nosotros h1{
+    text-align: center;
+    font-weight: normal;
+    font-size: 100px;
+    line-height: 120px;
+    overflow: hidden;
+    background-color: rgb(244, 231, 255);
+    border-radius: 500rem;
+    padding: 10px 20px 10px 20px;
+    font-family: simplifica;
+}
+
+.nosotros p{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 30px;
+    font-weight: normal;
+   
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; 
+    margin-left: 450px;
+    margin-top: 1600px;
+    z-index: 0;
+    position: absolute;
+  }
+  
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+ 
+.flip-card-back {
+    background-color: rgb(214, 26, 26);
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+.images{
+      width: 300px;
+      height: 300px;
+  }
+
+.flip-card-back h1{
+    padding-top: 120px;
+    font-size: 40px;
+}
+
+.flip-card-back p{
+    padding: 7px 5px;
+    font-size: 26px;
+}
+
+.flip-card2 {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; 
+    margin-left: 825px;
+    margin-top: 1600px;
+    z-index: 0;
+    position: absolute;
+  }
+  
+.flip-card-inner2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+.flip-card2:hover .flip-card-inner2 {
+    transform: rotateY(180deg);
+  }
+  
+.flip-card-front2, .flip-card-back2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+.flip-card-front2 {
+    background-color: #bbb;
+    color: black;
+  }
+  
+ 
+.flip-card-back2 {
+    background-color: rgb(203, 163, 255);
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-back2 h1{
+    padding-top: 120px;
+    font-size: 40px;
+}
+
+.flip-card-back2 p{
+    padding: 7px 5px;
+    font-size: 26px;
+}
+
+.contactanos h1{
+    text-align: center;
+    font-weight: normal;
+    font-size: 100px;
+    line-height: 120px;
+    overflow: hidden;
+    background-color: rgb(231, 255, 240);
+    border-radius: 500rem;
+    padding: 10px 20px 10px 20px;
+    font-family: simplifica;
+}
+
+.contactanos{
+    margin-top: 1350px;
+    margin-left: 270px;
+    padding-top: 75px;
+    padding-bottom: 370px;
+    box-shadow: 0 0 4px 0px black;
+    background-color: white;
+    width: 80%;
+    position: absolute;
+    display: block;
+    z-index: 0;
+}
+
+footer{
+    color: rgb(165, 165, 165);
+    font-size: 20px;
+    position: absolute;
+    display: block;
+    margin-top: 1980px;
+    margin-left: 50%;
+    padding-bottom: 20px;
+}
+

@@ -33,7 +33,7 @@ class App extends Component {
           
           <Redirect
             from="/"
-            to="/inicio_sesion" />
+            to="/inicio" />
           <Switch>
             <Route
               path="/inicio_sesion"

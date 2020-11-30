@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../styles/personas2.css';
 import '../header.css';
 import '../images/agregar-button.png';
+import { Link } from 'react-router-dom';
 
 
 class Personas2 extends Component {
@@ -28,7 +29,7 @@ class Personas2 extends Component {
            <option value="conyuge">Conyuge</option>
            <option value="otro">Otro</option>
           </select>
-          <button class="button" type="submit">Añadir</button>
+          <Link to="/personas"><button class="button" type="submit">Añadir</button></Link>
         </form>
 
         </body>   

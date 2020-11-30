@@ -21,7 +21,7 @@ class Sesion extends Component{
               <p class="olvido">¿has olvidado sesión?<a href="#">Haz click aquí</a></p>
             </div>
           </div>
-          <img class="imagen_sesion" src="https://www.educaciontrespuntocero.com/wp-content/uploads/2018/11/recursos-sobre-econom%C3%ADa-696x493.jpg" alt="dibujo bonito" />
+          <img class="imagen_sesion" src="https://www.educaciontrespuntocero.com/wp-content/uploads/2018/11/recursos-sobre-econom%C3%ADa-696x493.jpg" alt="imagen_sesion" />
           
           
         </body>

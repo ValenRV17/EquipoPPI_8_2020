@@ -5,7 +5,7 @@ const connection = require('../db/db.js');
 
 router.get('/usuarios', (req,res)=>{
 
-    connection.query('SELECT * FROM usuario', (err, rows, fields)=>{
+    connection.query('SELECT * FROM Usuario', (err, rows, fields)=>{
         if (!err){
             res.json(rows);
         }   else{

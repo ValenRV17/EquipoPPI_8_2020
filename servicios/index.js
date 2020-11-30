@@ -7,7 +7,11 @@ const gasinp = require('./routes/gasinp');
 const persona = require('./routes/persona');
 const consejos = require('./routes/consejos') 
 
+
+
 app.set('port', 3001);
+
+require('dotenv').config()
 
 app.use(express.json());
 
